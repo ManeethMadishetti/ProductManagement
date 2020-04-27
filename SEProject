@@ -9,7 +9,6 @@ public class SEProject extends JFrame {
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JTextField textField;
-	String Nouseka;
 	private JPasswordField passwordField;
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -148,17 +147,6 @@ import java.awt.*;
 import java.awt.event.*;
 public class Feedback extends JFrame {
 
-	public void underStand()
-	{
-
-
-	String x;
-	String y="Dont Trouble"
-	x=y;
-	if(x==y){
-		System.out.println("This Is the Me");
-	}
-	}
  
 	private static final long serialVersionUID = 1L;
 
@@ -289,10 +277,17 @@ public class Feedback extends JFrame {
                            rdbtnNewRadioButton_4.setBounds(499, 205, 36, 21);
 
                            contentPane.add(rdbtnNewRadioButton_4);
+			   JButton btnNewButton = new JButton("SUBMIT");
 
-                          
+                          btnNewButton.addActionListener(new ActionListener() {
 
-                           JButton btnNewButton = new JButton("SUBMIT");
+                                         public void actionPerformed(ActionEvent e) {
+
+                                                       JOptionPane.showMessageDialog(btnNewButton, "YOUR FEEDBACK TAKEN SUCCESFULLY");
+
+                                         }
+
+                           });
 
                           
 

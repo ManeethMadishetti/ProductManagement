@@ -9,7 +9,6 @@ public class SEProject extends JFrame {
 	private JPanel contentPane;
 	private JTextField textField;
 	private JPasswordField passwordField;
- 	Private Static JFrame fr;
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -89,3 +88,95 @@ public class SEProject extends JFrame {
 		
 	}
 }
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
+import java.awt.Font;
+
+import java.awt.Color;
+import javax.swing.JTextField;
+import javax.swing.JTextArea;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class Complaint extends JFrame {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private JPanel contentPane;
+	private JTextField textField;
+
+	/**
+	 * Launch the application.
+	 */
+	/*
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Complaint frame = new Complaint();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}*/
+
+	/**
+	 * Create the frame.
+	 */
+	public Complaint() {
+		
+		//setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setBackground(new Color(255, 153, 255));
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblRaiseYourComplaints = new JLabel("Raise Your Complaints Here");
+		lblRaiseYourComplaints.setBackground(Color.ORANGE);
+		lblRaiseYourComplaints.setFont(new Font("Tahoma", Font.BOLD, 16));
+		lblRaiseYourComplaints.setBounds(69, 13, 275, 16);
+		contentPane.add(lblRaiseYourComplaints);
+		
+		JLabel lblTitle = new JLabel("Title");
+		lblTitle.setFont(new Font("Times New Roman", Font.BOLD, 16));
+		lblTitle.setBounds(28, 42, 56, 16);
+		contentPane.add(lblTitle);
+		
+		textField = new JTextField();
+		textField.setBounds(93, 40, 291, 22);
+		contentPane.add(textField);
+		textField.setColumns(10);
+		
+		JLabel lblDescription = new JLabel("Description");
+		lblDescription.setFont(new Font("Times New Roman", Font.BOLD, 16));
+		lblDescription.setBounds(28, 81, 90, 22);
+		contentPane.add(lblDescription);
+		
+		JTextArea textArea = new JTextArea();
+		textArea.setBounds(38, 116, 346, 86);
+		contentPane.add(textArea);
+		
+		JButton btnSubmit = new JButton("Submit");
+		btnSubmit.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(Complaint.this,"Successfully Submitted Your Complaint");
+			}
+		});
+		btnSubmit.setBounds(157, 215, 97, 25);
+		contentPane.add(btnSubmit);
+		this.setVisible(true);
+	}
+}
+
+

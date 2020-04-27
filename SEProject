@@ -4,10 +4,12 @@ import javax.swing.border.EmptyBorder;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
+import man.hhh.jsjs.*
 public class SEProject extends JFrame {
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JTextField textField;
+	String Nouseka;
 	private JPasswordField passwordField;
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -146,6 +148,17 @@ import java.awt.*;
 import java.awt.event.*;
 public class Feedback extends JFrame {
 
+	public void underStand()
+	{
+
+
+	String x;
+	String y="Dont Trouble"
+	x=y;
+	if(x==y){
+		System.out.println("This Is the Me");
+	}
+	}
  
 	private static final long serialVersionUID = 1L;
 
@@ -160,12 +173,10 @@ public class Feedback extends JFrame {
                            setFont(new Font("Gadugi", Font.BOLD, 15));
 
                            setForeground(Color.ORANGE);
-
+			   
                            setTitle("FEEDBACK");
-
-                          // setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-                           setBounds(100, 100, 834, 622);
+                           
+			   setBounds(100, 100, 834, 622);
 
                            contentPane = new JPanel();
 
@@ -212,9 +223,7 @@ public class Feedback extends JFrame {
                            lblNewLabel_1.setBounds(76, 190, 183, 51);
 
                            contentPane.add(lblNewLabel_1);
-
-                          
-
+			   
                            JRadioButton rdbtnNewRadioButton = new JRadioButton("1");
 
                            buttonGroup.add(rdbtnNewRadioButton);
@@ -254,9 +263,7 @@ public class Feedback extends JFrame {
                            rdbtnNewRadioButton_2.setBounds(388, 207, 41, 21);
 
                            contentPane.add(rdbtnNewRadioButton_2);
-
-                          
-
+			   
                            JRadioButton rdbtnNewRadioButton_3 = new JRadioButton("4");
 
                            buttonGroup.add(rdbtnNewRadioButton_3);
@@ -287,15 +294,7 @@ public class Feedback extends JFrame {
 
                            JButton btnNewButton = new JButton("SUBMIT");
 
-                           btnNewButton.addActionListener(new ActionListener() {
-
-                                         public void actionPerformed(ActionEvent e) {
-
-                                                       JOptionPane.showMessageDialog(btnNewButton, "YOUR FEEDBACK TAKEN SUCCESFULLY");
-
-                                         }
-
-                           });
+                          
 
                            btnNewButton.setForeground(Color.BLACK);
 

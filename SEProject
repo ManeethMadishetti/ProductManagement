@@ -141,43 +141,12 @@ public class Complaint extends JFrame {
 }
 
 
-import javax.swing.JFrame;
-
-import javax.swing.JPanel;
-
-import javax.swing.border.EmptyBorder;
-
-import javax.swing.JLabel;
-
-import javax.swing.JOptionPane;
-
- 
-
-import java.awt.Font;
-
-import javax.swing.JTextField;
-
-import java.awt.Color;
-
-import javax.swing.JRadioButton;
-
-import javax.swing.JButton;
-
-import java.awt.event.ActionListener;
-
-import java.awt.event.ActionEvent;
-
-import javax.swing.ButtonGroup;
-
- 
-
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
 public class Feedback extends JFrame {
 
  
-
-              /**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
 			private JPanel contentPane;
@@ -185,23 +154,6 @@ public class Feedback extends JFrame {
               private JTextField textField;
 
               private final ButtonGroup buttonGroup = new ButtonGroup();
-
- 
-
-              /**
-
-              * Launch the application.
-
-              */
-
-           
- 
-
-              /**
-
-              * Create the frame.
-
-              */
 
               public Feedback() {
 
@@ -371,52 +323,19 @@ public class Feedback extends JFrame {
 
 }
 
-import javax.swing.JFrame;
-
-import javax.swing.JPanel;
-
-import java.awt.Color;
-
-import javax.swing.UIManager;
-
-import javax.swing.JButton;
-
-import java.awt.Font;
-
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionListener;
-
 import java.awt.event.ActionEvent;
-
-import javax.swing.JLabel;
 
  
 
 public class HOMEUI extends JFrame {
-
- 
-
-              /**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-			private JPanel contentPane;
-
- 
-
-              /**
-
-              * Launch the application.
-
-              */
-              /**
-
-              * Create the frame.
-
-              */
+    	private JPanel contentPane;
 
               public HOMEUI() {
 
-                        //   setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+          
 
                            setBounds(100, 100, 738, 538);
 

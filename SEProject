@@ -141,3 +141,379 @@ public class Complaint extends JFrame {
 }
 
 
+import javax.swing.JFrame;
+
+import javax.swing.JPanel;
+
+import javax.swing.border.EmptyBorder;
+
+import javax.swing.JLabel;
+
+import javax.swing.JOptionPane;
+
+ 
+
+import java.awt.Font;
+
+import javax.swing.JTextField;
+
+import java.awt.Color;
+
+import javax.swing.JRadioButton;
+
+import javax.swing.JButton;
+
+import java.awt.event.ActionListener;
+
+import java.awt.event.ActionEvent;
+
+import javax.swing.ButtonGroup;
+
+ 
+
+public class Feedback extends JFrame {
+
+ 
+
+              /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+			private JPanel contentPane;
+
+              private JTextField textField;
+
+              private final ButtonGroup buttonGroup = new ButtonGroup();
+
+ 
+
+              /**
+
+              * Launch the application.
+
+              */
+
+           
+ 
+
+              /**
+
+              * Create the frame.
+
+              */
+
+              public Feedback() {
+
+                           setFont(new Font("Gadugi", Font.BOLD, 15));
+
+                           setForeground(Color.ORANGE);
+
+                           setTitle("FEEDBACK");
+
+                          // setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+                           setBounds(100, 100, 834, 622);
+
+                           contentPane = new JPanel();
+
+                           contentPane.setBackground(Color.ORANGE);
+
+                           contentPane.setForeground(Color.ORANGE);
+
+                           contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+                           setContentPane(contentPane);
+
+                           contentPane.setLayout(null);
+
+                          
+
+                           JLabel lblNewLabel = new JLabel("GIVE YOUR FEEDBACK");
+
+                           lblNewLabel.setForeground(Color.BLACK);
+
+                           lblNewLabel.setFont(new Font("SansSerif", Font.BOLD, 14));
+
+                           lblNewLabel.setBounds(76, 65, 164, 51);
+
+                           contentPane.add(lblNewLabel);
+
+                          
+
+                           textField = new JTextField();
+
+                           textField.setBackground(Color.WHITE);
+
+                           textField.setBounds(250, 65, 412, 94);
+
+                           contentPane.add(textField);
+
+                           textField.setColumns(10);
+
+                          
+
+                           JLabel lblNewLabel_1 = new JLabel("Rate your Experience");
+
+                           lblNewLabel_1.setFont(new Font("SansSerif", Font.BOLD, 14));
+
+                           lblNewLabel_1.setBounds(76, 190, 183, 51);
+
+                           contentPane.add(lblNewLabel_1);
+
+                          
+
+                           JRadioButton rdbtnNewRadioButton = new JRadioButton("1");
+
+                           buttonGroup.add(rdbtnNewRadioButton);
+
+                           rdbtnNewRadioButton.setBackground(Color.ORANGE);
+
+                           rdbtnNewRadioButton.setFont(new Font("SansSerif", Font.BOLD, 14));
+
+                           rdbtnNewRadioButton.setBounds(265, 207, 36, 21);
+
+                           contentPane.add(rdbtnNewRadioButton);
+
+                          
+
+                           JRadioButton rdbtnNewRadioButton_1 = new JRadioButton("2");
+
+                           buttonGroup.add(rdbtnNewRadioButton_1);
+
+                           rdbtnNewRadioButton_1.setBackground(Color.ORANGE);
+
+                           rdbtnNewRadioButton_1.setFont(new Font("Tahoma", Font.BOLD, 14));
+
+                           rdbtnNewRadioButton_1.setBounds(321, 207, 36, 21);
+
+                           contentPane.add(rdbtnNewRadioButton_1);
+
+                          
+
+                           JRadioButton rdbtnNewRadioButton_2 = new JRadioButton("3");
+
+                           buttonGroup.add(rdbtnNewRadioButton_2);
+
+                           rdbtnNewRadioButton_2.setBackground(Color.ORANGE);
+
+                           rdbtnNewRadioButton_2.setFont(new Font("Tahoma", Font.BOLD, 14));
+
+                           rdbtnNewRadioButton_2.setBounds(388, 207, 41, 21);
+
+                           contentPane.add(rdbtnNewRadioButton_2);
+
+                          
+
+                           JRadioButton rdbtnNewRadioButton_3 = new JRadioButton("4");
+
+                           buttonGroup.add(rdbtnNewRadioButton_3);
+
+                           rdbtnNewRadioButton_3.setBackground(Color.ORANGE);
+
+                            rdbtnNewRadioButton_3.setFont(new Font("Tahoma", Font.BOLD, 14));
+
+                           rdbtnNewRadioButton_3.setBounds(440, 197, 41, 36);
+
+                           contentPane.add(rdbtnNewRadioButton_3);
+
+                          
+
+                           JRadioButton rdbtnNewRadioButton_4 = new JRadioButton("5");
+
+                           buttonGroup.add(rdbtnNewRadioButton_4);
+
+                           rdbtnNewRadioButton_4.setBackground(Color.ORANGE);
+
+                           rdbtnNewRadioButton_4.setFont(new Font("Tahoma", Font.BOLD, 14));
+
+                           rdbtnNewRadioButton_4.setBounds(499, 205, 36, 21);
+
+                           contentPane.add(rdbtnNewRadioButton_4);
+
+                          
+
+                           JButton btnNewButton = new JButton("SUBMIT");
+
+                           btnNewButton.addActionListener(new ActionListener() {
+
+                                         public void actionPerformed(ActionEvent e) {
+
+                                                       JOptionPane.showMessageDialog(btnNewButton, "YOUR FEEDBACK TAKEN SUCCESFULLY");
+
+                                         }
+
+                           });
+
+                           btnNewButton.setForeground(Color.BLACK);
+
+                           btnNewButton.setBackground(Color.ORANGE);
+
+                           btnNewButton.setFont(new Font("Myanmar Text", Font.BOLD, 14));
+
+                           btnNewButton.setBounds(337, 273, 150, 36);
+
+                           contentPane.add(btnNewButton);
+
+                          
+
+                           JLabel lblNewLabel_2 = new JLabel("FEEDBACK FORM");
+
+                           lblNewLabel_2.setForeground(Color.DARK_GRAY);
+
+                           lblNewLabel_2.setFont(new Font("Tahoma", Font.BOLD, 16));
+
+                           lblNewLabel_2.setBounds(337, 31, 461, 13);
+
+                           contentPane.add(lblNewLabel_2);
+                           setVisible(true);
+              }
+
+}
+
+import javax.swing.JFrame;
+
+import javax.swing.JPanel;
+
+import java.awt.Color;
+
+import javax.swing.UIManager;
+
+import javax.swing.JButton;
+
+import java.awt.Font;
+
+import java.awt.event.ActionListener;
+
+import java.awt.event.ActionEvent;
+
+import javax.swing.JLabel;
+
+ 
+
+public class HOMEUI extends JFrame {
+
+ 
+
+              /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+			private JPanel contentPane;
+
+ 
+
+              /**
+
+              * Launch the application.
+
+              */
+              /**
+
+              * Create the frame.
+
+              */
+
+              public HOMEUI() {
+
+                        //   setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+                           setBounds(100, 100, 738, 538);
+
+                           contentPane = new JPanel();
+
+                           contentPane.setBackground(Color.ORANGE);
+
+                           contentPane.setForeground(Color.ORANGE);
+
+                           contentPane.setBorder(UIManager.getBorder("EditorPane.border"));
+
+                           setContentPane(contentPane);
+
+                           contentPane.setLayout(null);
+
+                          
+
+                           JButton btnNewButton = new JButton("BUY_PRODUCTS");
+
+                           btnNewButton.addActionListener(new ActionListener() {
+
+                                         public void actionPerformed(ActionEvent e) {
+
+                                         }
+
+                           });
+
+                           btnNewButton.setBackground(Color.ORANGE);
+
+                           btnNewButton.setForeground(Color.BLACK);
+
+                           btnNewButton.setFont(new Font("Serif", Font.BOLD, 14));
+
+                           btnNewButton.setBounds(294, 201, 178, 45);
+
+                           contentPane.add(btnNewButton);
+
+                           btnNewButton.addActionListener(new ActionListener() {
+                   			public void actionPerformed(ActionEvent e) {
+                   			
+                   	
+                   			}
+                   		});
+                          
+
+                           JButton btnNewButton_1 = new JButton("COMPLAINTS");
+
+                           btnNewButton_1.setBackground(Color.ORANGE);
+
+                           btnNewButton_1.setFont(new Font("Serif", Font.BOLD, 14));
+
+                           btnNewButton_1.addActionListener(new ActionListener() {
+
+                                         public void actionPerformed(ActionEvent e) {
+
+                                        	 new Complaint();
+                                         }
+
+                           });
+
+                           btnNewButton_1.setBounds(121, 197, 150, 53);
+
+                           contentPane.add(btnNewButton_1);
+
+                          
+
+                           JButton btnNewButton_2 = new JButton("FEEDBACK");
+
+                           btnNewButton_2.setBackground(Color.ORANGE);
+
+                           btnNewButton_2.setForeground(Color.BLACK);
+
+                           btnNewButton_2.setFont(new Font("Serif", Font.BOLD, 14));
+
+                           btnNewButton_2.setBounds(506, 197, 139, 53);
+
+                           contentPane.add(btnNewButton_2);
+
+                           btnNewButton_2.addActionListener(new ActionListener() {
+                      			public void actionPerformed(ActionEvent e) {
+                      			
+                      					new Feedback();
+                      			}
+                      		});
+
+                           JLabel lblNewLabel = new JLabel("WELCOME TO M&M STOCK MANAGEMENT");
+
+                           lblNewLabel.setFont(new Font("Papyrus", Font.BOLD, 19));
+
+                           lblNewLabel.setBounds(110, 54, 600, 75);
+
+                           contentPane.add(lblNewLabel);
+                           setVisible(true);
+
+              }
+}
+
+ 
+
+
